@@ -1,0 +1,23 @@
+# Render Blueprint (optional). Dashboard: New > Blueprint > pick this repo.
+# Docker is the deployment method; the Dockerfile builds and starts everything.
+services:
+  - type: web
+    name: tuzkai
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: starter            # always-on. "free" works but sleeps after 15 idle minutes.
+    healthCheckPath: /api/healthz
+    autoDeploy: true
+    # TUZAKAI_ADMIN_USER_IDS and OPENAI_API_KEY are added later in the Render dashboard (see README.md).
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: CLERK_SECRET_KEY
+        sync: false
+      - key: CLERK_PUBLISHABLE_KEY
+        sync: false
+      - key: VITE_CLERK_PUBLISHABLE_KEY
+        sync: false
