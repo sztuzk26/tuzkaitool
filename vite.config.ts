@@ -5,23 +5,32 @@ import { defineConfig } from 'vite';
 
 import runtimeErrorOverlay from '@replit/vite-plugin-runtime-error-modal';
 
-export default defineConfig(async ({ command }) => {
-  // Managed workflows provide these at runtime. A standalone static build
-  // needs neither a listening port nor a non-root base path.
-  const rawPort = process.env.PORT;
-  if (!rawPort && command !== 'build') {
-    throw new Error('PORT environment variable is required but was not provided.');
-  }
-  const port = rawPort ? Number(rawPort) : 25557;
-  if (!Number.isInteger(port) || port <= 0 || port > 65535) {
-    throw new Error(`Invalid PORT value: "${rawPort}"`);
-  }
-  const basePath = process.env.BASE_PATH || (command === 'build' ? '/' : '');
-  if (!basePath) {
-    throw new Error('BASE_PATH environment variable is required but was not provided.');
-  }
+// A production build needs neither a listening port nor an explicit base path.
+// Dev server / preview still require PORT and BASE_PATH (set by the workspace).
+const isBuild = process.argv.includes('build');
+const rawPort = process.env.PORT;
 
-  return {
+if (!rawPort && !isBuild) {
+  throw new Error(
+    'PORT environment variable is required but was not provided.',
+  );
+}
+
+const port = rawPort ? Number(rawPort) : 3000;
+
+if (Number.isNaN(port) || port <= 0) {
+  throw new Error(`Invalid PORT value: "${rawPort}"`);
+}
+
+const basePath = process.env.BASE_PATH || (isBuild ? '/tuzakai/' : '');
+
+if (!basePath) {
+  throw new Error(
+    'BASE_PATH environment variable is required but was not provided.',
+  );
+}
+
+export default defineConfig({
   base: basePath,
   plugins: [
     react(),
@@ -72,5 +81,4 @@ export default defineConfig(async ({ command }) => {
     host: '0.0.0.0',
     allowedHosts: true,
   },
-  };
 });
