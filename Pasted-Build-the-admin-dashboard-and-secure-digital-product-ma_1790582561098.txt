@@ -1,0 +1,72 @@
+Build the admin dashboard and secure digital-product management system for TuzakAI.
+
+Requirements:
+
+1. Admin authentication
+
+- Create a secure admin login page.
+- Admin username/email and password must NOT be hardcoded in frontend code.
+- Store admin credentials securely using environment variables or a secure authentication/database system.
+- Never expose the admin password to customers or in API responses.
+- Add logout functionality.
+- Protect all admin routes with server-side authentication/authorization.
+
+2. Admin dashboard
+   Create an Admin Dashboard where an authorized admin can:
+
+- Add digital products
+- Edit products
+- Delete/unpublish products
+- Upload PDF, ZIP, template, guide, or other permitted digital files
+- Add product name
+- Description
+- Price
+- Product image
+- Category
+- File/version information
+- Publish/unpublish status
+
+3. Secure digital delivery
+   Customer flow:
+   Digital Product → Cart → Checkout → Whop payment → Successful payment → Customer account → My Purchases → Secure Download.
+
+Do NOT expose private storage URLs.
+Do NOT place downloadable files in a publicly accessible folder.
+Downloads must be authorized by the server and only available to customers who have successfully purchased the product.
+
+4. Admin product management
+   Show a table containing:
+
+- Product
+- Price
+- Category
+- Status
+- Sales
+- Created date
+- Edit
+- Delete/unpublish
+
+5. Customer account
+   Add:
+
+- My Purchases
+- Download button
+- Purchase date
+- Product name
+- Access status
+
+6. Security
+
+- Validate every admin request on the server.
+- Validate customer purchase/access before generating a download.
+- Prevent users from changing a product ID in the URL to download another customer's product.
+- Use short-lived/signed download links or a secure server-side download endpoint.
+- Do not expose storage credentials, API keys, Whop secrets, or admin credentials to the frontend.
+
+7. UI
+   Make the Admin Dashboard responsive for mobile, tablet and desktop.
+
+Before implementing, create a Replit checkpoint named:
+"Before Admin + Digital Product System"
+
+Do not delete or break the existing storefront, cart, Whop checkout, AI tools, or customer account functionality.

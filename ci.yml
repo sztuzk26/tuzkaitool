@@ -1,0 +1,29 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  VITE_CLERK_PUBLISHABLE_KEY: pk_test_placeholder_for_ci_build   # public key placeholder; only used to satisfy the build
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4          # version comes from "packageManager" in package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Install
+        run: pnpm install --frozen-lockfile
+      - name: Typecheck
+        run: pnpm run typecheck
+      - name: Build (typecheck + production build)
+        run: pnpm run build
+      - name: Build production bundles
+        run: pnpm run build:prod
+      - name: Start production server, check /api/healthz, 0.0.0.0, PORT, /, /tuzakai/
+        run: sh scripts/verify-prod.sh

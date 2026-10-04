@@ -1,0 +1,972 @@
+BUILD A REAL AI PRODUCT CALLED:
+
+SZTUZK JEWELRY STUDIO
+AI JEWELRY DESIGNER
+
+This is a commercial digital product that I intend to sell as a jewelry-maker/business tool through marketplaces such as Etsy and Gumroad.
+
+The current application must NOT be a dummy/demo.
+
+The main purpose is to solve real problems for handmade jewelry makers.
+
+==================================================
+CORE CUSTOMER PROBLEM
+==================================================
+
+A jewelry maker often has an idea but doesn't know:
+
+- What design to make
+- Which materials/components to use
+- How many components are required
+- How to combine colors and components
+- How to make the jewelry
+- How much the complete piece will cost
+- What selling price to use
+- How much profit they may make
+- How to reduce cost
+- How to create alternative versions
+- Whether the design may be too heavy, expensive, complicated, or visually crowded
+
+SZTUZK JEWELRY AI DESIGNER must solve these problems in one workflow.
+
+==================================================
+MAIN PROMISE
+==================================================
+
+The user can enter:
+
+"I want cute pink pearl earrings for a birthday gift under Rs. 500."
+
+The application should transform that request into:
+
+1. Recommended jewelry design
+2. Visual design preview
+3. Complete material list
+4. Required quantities
+5. Step-by-step making instructions
+6. Production cost
+7. Wastage cost
+8. Labor cost
+9. Packaging cost
+10. Total production cost
+11. Suggested selling-price options
+12. Estimated profit
+13. Design suggestions
+14. Design warnings
+15. Cheaper alternatives
+16. Premium alternatives
+17. Design variations
+18. Save/export option
+
+==================================================
+PRODUCT NAME
+==================================================
+
+Brand:
+
+SZTUZK
+
+Product:
+
+Sztuzk Jewelry AI Designer
+
+Subtitle:
+
+AI Jewelry Design, Making & Cost Calculator
+
+Use this branding throughout the application.
+
+==================================================
+HOME SCREEN
+==================================================
+
+Create a simple professional homepage.
+
+Headline:
+
+"Turn Your Jewelry Idea Into a Complete Design"
+
+Subheadline:
+
+"Design it. Make it. Calculate the cost. Price it."
+
+Primary button:
+
+"Create Jewelry"
+
+Secondary button:
+
+"Help Me Design"
+
+Additional buttons:
+
+"My Designs"
+"Cost Calculator"
+"Materials"
+
+==================================================
+TWO DESIGN MODES
+==================================================
+
+MODE 1:
+
+DESIGN IT MYSELF
+
+The user selects:
+
+Jewelry type
+Style
+Shape
+Material
+Color
+Decoration
+Finding
+Size
+Personalization
+Budget
+
+MODE 2:
+
+HELP ME DESIGN
+
+The user simply describes what they want.
+
+Example:
+
+"I need affordable daily-wear earrings for college girls."
+
+AI asks only the necessary follow-up questions.
+
+Then creates the complete design.
+
+==================================================
+JEWELRY TYPES
+==================================================
+
+Support:
+
+- Earrings
+- Bracelet
+- Necklace
+- Pendant
+- Ring
+- Anklet
+- Brooch
+- Keychain
+- Hair accessory
+
+The architecture must allow more categories later.
+
+==================================================
+EARRING DESIGNER
+==================================================
+
+Provide:
+
+Style:
+
+- Stud
+- Drop
+- Dangle
+- Hoop
+- Jhumka
+- Chandelier
+- Hook
+- Resin
+- Beaded
+- Pearl
+- Personalized
+
+Shape:
+
+- Round
+- Oval
+- Heart
+- Flower
+- Star
+- Moon
+- Leaf
+- Geometric
+- Custom
+
+Main material:
+
+- Resin
+- Beads
+- Pearl
+- Acrylic
+- Clay
+- Metal
+- Wood
+- Mixed
+
+Decoration:
+
+- Pearl
+- Crystal
+- Rhinestone
+- Flower
+- Dried flower
+- Charm
+- Letter
+- Name
+- Beads
+- Glitter
+- Foil
+- Shell
+
+Hook/finding:
+
+- Gold tone
+- Silver tone
+- Stainless steel
+- Stud
+- Lever back
+- Hoop
+- French hook
+- Clip-on
+
+==================================================
+AI DESIGN GENERATION
+==================================================
+
+When the user selects components, create a structured design object.
+
+Example:
+
+{
+  jewelryType: "earrings",
+  style: "dangle",
+  base: "resin flower",
+  material: "resin",
+  decoration: ["6mm pearl"],
+  hook: "gold-tone hook",
+  color: ["pink", "white", "gold"],
+  size: "medium",
+  quantity: 1
+}
+
+The AI should analyze this information and create:
+
+- Design name
+- Design description
+- Design recommendations
+- Materials
+- Instructions
+- Warnings
+- Alternatives
+- Cost calculation inputs
+
+==================================================
+VISUAL DESIGN
+==================================================
+
+This is mandatory.
+
+The application must provide a visual preview that reflects the user's actual selections.
+
+Do NOT show a generic image regardless of what the user selects.
+
+For example:
+
+If user chooses:
+
+Pink
++
+Flower resin
++
+White pearl
++
+Gold hook
+
+the preview should represent:
+
+Pink flower resin earrings
+with white pearls
+and gold-tone hooks.
+
+Use an image-generation API if available.
+
+If image generation is unavailable, create a component-based visual preview using real transparent component images/SVG layers.
+
+Clearly label AI-generated images:
+
+"AI Design Preview"
+
+Do not claim that an AI image is an exact manufacturing blueprint.
+
+==================================================
+REAL COMPONENT LIBRARY
+==================================================
+
+Create a database containing jewelry components.
+
+Each component must have:
+
+ID
+Name
+Category
+Material
+Color
+Size
+Unit
+Price
+Image
+Weight if known
+Supplier
+Supplier URL
+Notes
+Active status
+
+Examples:
+
+6mm pearl
+8mm pearl
+Resin flower
+Gold hook
+Silver hook
+Jump ring
+Chain
+Charm
+Bead
+Elastic cord
+Jewelry card
+Packaging pouch
+Gift box
+
+IMPORTANT:
+
+Do NOT hard-code random prices.
+
+If a component has no configured price, display:
+
+"Price not configured"
+
+and allow the user/admin to enter the price.
+
+==================================================
+COST CALCULATOR
+==================================================
+
+Calculate:
+
+Component quantity × component price
+
+Then:
+
+Raw materials
++
+Wastage
++
+Labor
++
+Packaging
++
+Consumables
++
+Other costs
+=
+TOTAL PRODUCTION COST
+
+Use PKR as the default currency.
+
+Example:
+
+Materials: Rs. 180
+Wastage: Rs. 9
+Labor: Rs. 100
+Packaging: Rs. 30
+Other: Rs. 10
+
+Total:
+
+Rs. 329
+
+The arithmetic must be performed by application code.
+
+DO NOT allow AI to perform the final financial calculation.
+
+==================================================
+WASTAGE
+==================================================
+
+Allow the maker to configure:
+
+Wastage percentage
+
+Default:
+
+5%
+
+Formula:
+
+wastage =
+raw material cost × wastage percentage / 100
+
+==================================================
+LABOR
+==================================================
+
+Allow:
+
+Fixed labor cost
+
+OR
+
+Hourly labor cost.
+
+Example:
+
+30 minutes
+×
+Rs. 300/hour
+
+=
+Rs. 150 labor
+
+==================================================
+SELLING PRICE
+==================================================
+
+Provide:
+
+Cost price
+Wholesale price
+Retail price
+Premium/custom price
+
+Allow the user to enter:
+
+Desired profit percentage
+
+OR
+
+Desired profit amount.
+
+Calculate:
+
+Selling price
+-
+production cost
+-
+platform/payment fees if configured
+=
+estimated profit
+
+Clearly label:
+
+"Estimated profit"
+
+==================================================
+SMART SUGGESTIONS
+==================================================
+
+The AI must analyze the design.
+
+Examples:
+
+"This design may be heavy because the resin base and large pearls are both substantial."
+
+"Consider 6mm pearls instead of 10mm pearls for lighter daily wear."
+
+"Using a simpler hook could reduce production cost."
+
+"The selected colors create a strong contrast suitable for a statement design."
+
+"Your selected components may make the design visually crowded."
+
+Suggestions must be based on the actual selections.
+
+Do NOT generate random generic suggestions.
+
+==================================================
+BUDGET DESIGN MODE
+==================================================
+
+Allow the user to enter:
+
+"My budget is Rs. 500."
+
+AI should create a design that attempts to stay within the budget using the component database.
+
+Show:
+
+Budget
+Estimated production cost
+Remaining budget
+
+If it cannot stay within budget:
+
+Explain why.
+
+Example:
+
+"Your requested combination exceeds the budget mainly because of the premium hook and large pearls."
+
+Then offer alternatives.
+
+==================================================
+ALTERNATIVE DESIGNS
+==================================================
+
+For every completed design provide:
+
+Budget version
+Minimal version
+Premium version
+
+Each must actually change:
+
+Components
+Cost
+Instructions
+Design description
+Visual preview where available
+Selling price
+Profit estimate
+
+==================================================
+MAKING GUIDE
+==================================================
+
+Generate practical instructions.
+
+Example:
+
+1. Prepare the resin bases.
+2. Arrange the pearls before attaching them.
+3. Attach the pearls.
+4. Attach jump rings.
+5. Attach the hooks.
+6. Check symmetry.
+7. Allow adhesive/material to cure according to manufacturer instructions.
+8. Inspect the final pair.
+9. Package the finished jewelry.
+
+Instructions must be specific to the chosen design.
+
+==================================================
+COMPLETE DESIGN PROFILE
+==================================================
+
+Every completed design should display:
+
+DESIGN NAME
+
+Visual Preview
+
+Jewelry Type
+
+Style
+
+Materials
+
+Colors
+
+Size
+
+Difficulty
+
+Estimated Making Time
+
+Materials List
+
+Making Instructions
+
+Cost Breakdown
+
+Total Production Cost
+
+Suggested Selling Prices
+
+Estimated Profit
+
+Design Suggestions
+
+Warnings
+
+Alternative Designs
+
+==================================================
+DESIGN DIFFICULTY
+==================================================
+
+Calculate:
+
+Easy
+Medium
+Advanced
+
+Based on:
+
+Number of components
+Number of assembly steps
+Personalization
+Special techniques
+Estimated making time
+
+==================================================
+SAVE DESIGN
+==================================================
+
+Allow users to:
+
+Save
+Rename
+Duplicate
+Edit
+Delete
+Open previous design
+
+Save:
+
+Selections
+Design profile
+Material list
+Cost calculation
+Instructions
+Suggestions
+Generated image URL if available
+Creation date
+
+==================================================
+PDF EXPORT
+==================================================
+
+Create:
+
+"Download Design Sheet"
+
+PDF must contain:
+
+Sztuzk Jewelry Studio branding
+
+Design image
+
+Design name
+
+Materials
+
+Quantities
+
+Cost breakdown
+
+Making instructions
+
+Suggested selling prices
+
+Estimated profit
+
+Suggestions
+
+Warnings
+
+This should look like a professional jewelry-making worksheet.
+
+==================================================
+SHAREABLE DESIGN
+==================================================
+
+Create a shareable design URL.
+
+A user can share their design with another person.
+
+The shared page should show:
+
+Design
+Materials
+Instructions
+Cost
+Selling price
+
+==================================================
+MY DESIGNS
+==================================================
+
+Dashboard:
+
+My Designs
+
+Cards showing:
+
+Design image
+Name
+Jewelry type
+Cost
+Date
+
+Actions:
+
+Open
+Edit
+Duplicate
+Export
+Delete
+
+==================================================
+MATERIAL PRICE MANAGEMENT
+==================================================
+
+Create an admin area.
+
+Admin can:
+
+Add component
+Edit component
+Update price
+Upload component image
+Set unit
+Set supplier
+Set weight
+Set inventory
+Deactivate component
+
+IMPORTANT:
+
+When prices change, old saved designs must preserve the price used at the time they were created.
+
+==================================================
+PLATFORM COST SETTINGS
+==================================================
+
+Create configurable settings for:
+
+Etsy
+Gumroad
+Redbubble
+Zazzle
+Other
+
+DO NOT hard-code platform fees unless configured by admin.
+
+Allow:
+
+Platform fee %
+Payment processing %
+Fixed fee
+
+These should be editable.
+
+==================================================
+AI ASSISTANT
+==================================================
+
+Add an AI chat/assistant called:
+
+"Sztuzk Jewelry Assistant"
+
+The assistant should answer questions such as:
+
+"What earrings can I make with pearls and resin?"
+
+"How can I make this design cheaper?"
+
+"What hook should I use?"
+
+"How can I make this suitable for daily wear?"
+
+"What can I make under Rs. 500?"
+
+"What materials do I need?"
+
+"How much should I charge?"
+
+"Give me three variations."
+
+The assistant must use the user's current design context when answering.
+
+==================================================
+IMPORTANT AI SAFETY/ACCURACY RULE
+==================================================
+
+The AI must distinguish between:
+
+Known database information
+AI recommendations
+Estimated values
+
+Never pretend an estimated material price is an actual supplier price.
+
+Never claim an AI image is an exact physical representation.
+
+Never claim a design's weight unless calculated or provided.
+
+==================================================
+MOBILE EXPERIENCE
+==================================================
+
+The application must be optimized for Android/mobile.
+
+Use:
+
+Large buttons
+Readable text
+Simple navigation
+Responsive images
+No horizontal scrolling
+Fast loading
+Sticky primary action
+
+Test approximately:
+
+360px
+390px
+412px
+
+==================================================
+COMMERCIAL DIGITAL PRODUCT
+==================================================
+
+This application is intended to be packaged and sold as a digital product/tool.
+
+Therefore create:
+
+Professional onboarding
+Demo/sample design
+Clear explanation of features
+Simple user interface
+Error handling
+Help section
+About section
+Privacy page
+Terms page
+
+Do not expose developer/API keys.
+
+Use environment variables for all API keys.
+
+==================================================
+DEMO MODE
+==================================================
+
+Create a working demo mode.
+
+Demo users should be able to try the complete workflow with sample components.
+
+But the demo must use the same real calculation and design system.
+
+Do not create fake buttons.
+
+==================================================
+CORE ACCEPTANCE TEST
+==================================================
+
+Test this exact request:
+
+"I want a pair of cute pink pearl flower earrings for a birthday gift. My maximum production budget is Rs. 500."
+
+The application must:
+
+1. Understand the request.
+2. Recommend a design.
+3. Select appropriate components.
+4. Show a visual preview.
+5. List materials.
+6. Calculate quantities.
+7. Calculate production cost.
+8. Include wastage.
+9. Include labor.
+10. Include packaging.
+11. Check the Rs. 500 budget.
+12. Give making instructions.
+13. Give design suggestions.
+14. Give warnings if appropriate.
+15. Give cheaper alternatives.
+16. Give premium alternatives.
+17. Suggest selling prices.
+18. Calculate estimated profit.
+19. Allow saving.
+20. Allow PDF export.
+
+Then test:
+
+Bracelet
+Necklace
+Ring
+
+to make sure the architecture is not limited to earrings.
+
+==================================================
+MOST IMPORTANT REQUIREMENT
+==================================================
+
+DO NOT BUILD A BEAUTIFUL DUMMY APP.
+
+BUILD A USEFUL PRODUCT.
+
+Every important button must perform a real action.
+
+Every selection must affect the output.
+
+Every cost must be calculated from actual configured component prices.
+
+Every design must have a complete profile.
+
+Every completed design should answer:
+
+WHAT SHOULD I MAKE?
+
+WHAT MATERIALS DO I NEED?
+
+HOW DO I MAKE IT?
+
+HOW MUCH WILL IT COST?
+
+WHAT CAN I CHARGE?
+
+WHAT PROFIT MIGHT I MAKE?
+
+HOW CAN I IMPROVE IT?
+
+The final product should feel like a real AI assistant for a jewelry maker, not a static jewelry catalog.
+
+==================================================
+DEVELOPMENT PROCESS
+==================================================
+
+Before changing the project:
+
+1. Inspect the existing Replit project.
+2. Identify current framework.
+3. Identify current database.
+4. Identify existing features.
+5. Identify existing API integrations.
+6. Identify which parts can be reused.
+7. Identify what is currently dummy functionality.
+8. Create a safe implementation plan.
+
+Then implement the product in phases:
+
+Phase 1:
+Core database and component system.
+
+Phase 2:
+Jewelry design workflow.
+
+Phase 3:
+Deterministic cost calculator.
+
+Phase 4:
+AI assistant.
+
+Phase 5:
+Visual preview.
+
+Phase 6:
+Making instructions and suggestions.
+
+Phase 7:
+Saved designs.
+
+Phase 8:
+PDF/export/share.
+
+Phase 9:
+Admin price management.
+
+Phase 10:
+Mobile optimization and testing.
+
+Do not stop at UI implementation.
+
+Test every core workflow before declaring the product complete.

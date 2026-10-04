@@ -1,0 +1,1574 @@
+BUILD A PRODUCTION-READY TUZAKAI DIGITAL PRODUCTS STORE + AI TOOLS PLATFORM
+
+Build a completely new, production-ready web application for my digital-product and AI-tool business.
+
+This application must be a real commercial storefront and customer platform, not a visual mockup or dummy/demo website.
+
+Every important feature must either work or clearly display an appropriate setup/unavailable state.
+
+---
+
+1. BRAND — IMPORTANT
+
+Primary Brand
+
+TuzakAI
+
+Brand/Creator
+
+by Sztuzk
+
+Current Website
+
+tuzkai.com
+
+IMPORTANT DOMAIN RULE
+
+The old website:
+
+sztuzkjewelry.com
+
+has been deleted and must NOT be used anywhere in this application.
+
+Do NOT:
+
+- link to it
+- redirect to it
+- mention it
+- use it as a canonical URL
+- use it in SEO
+- use it in footer
+- use it in emails
+- use it in marketplace listings
+- make any feature dependent on it
+
+The new application must be completely independent of the deleted website.
+
+The current digital business should be presented as:
+
+TuzakAI
+
+by Sztuzk
+
+The business can sell AI tools and digital products across multiple categories.
+
+Do NOT restrict the entire website to jewelry.
+
+---
+
+2. BUSINESS PURPOSE
+
+The website will be the central online store for:
+
+- AI tools
+- Digital products
+- Downloadable files
+- Templates
+- Jewelry resources
+- Business tools
+- Guides
+- Ebooks
+- Canva templates
+- Social media resources
+- Calculators
+- Creative resources
+- Future AI applications
+- Future digital products
+
+The architecture must allow new products to be added from the admin dashboard without changing the source code.
+
+---
+
+3. CORE CUSTOMER FLOW
+
+The main customer journey should be:
+
+Visitor
+
+↓
+
+TuzakAI Store
+
+↓
+
+Browse AI Tools / Digital Products
+
+↓
+
+Product Details
+
+↓
+
+Add to Cart / Buy Now
+
+↓
+
+Secure Checkout
+
+↓
+
+Payment Verification
+
+↓
+
+Customer Account
+
+↓
+
+Purchase Entitlement
+
+↓
+
+Download digital product OR access online AI tool
+
+For AI products:
+
+Purchase
+
+↓
+
+License generated
+
+↓
+
+Customer login
+
+↓
+
+License verification
+
+↓
+
+AI tool access
+
+The customer must NEVER receive:
+
+- Replit source code
+- private API keys
+- database credentials
+- payment secret keys
+- admin credentials
+- internal AI prompts that are intended to remain private
+
+---
+
+4. WEBSITE POSITIONING
+
+The website should communicate:
+
+AI Tools & Digital Products for Creative Entrepreneurs
+
+Suggested homepage subheading:
+
+Create smarter, design faster and grow your digital business with practical AI tools and ready-to-use digital products.
+
+The website should feel like:
+
+AI marketplace + digital-product store + creative technology platform
+
+It should NOT look like a generic AI dashboard.
+
+---
+
+5. HEADER
+
+Create a professional responsive sticky header.
+
+Logo:
+
+TuzakAI
+
+Small text:
+
+by Sztuzk
+
+Navigation:
+
+- Home
+- AI Tools
+- Digital Products
+- Categories
+- About
+- Contact
+
+When logged in:
+
+- My Account
+
+Right side:
+
+- Search
+- Cart
+- Account/Login
+
+Mobile:
+
+Use a professional hamburger navigation.
+
+---
+
+6. HOMEPAGE
+
+Create a polished commercial homepage.
+
+Hero
+
+Headline:
+
+AI Tools & Digital Products for Creative Entrepreneurs
+
+Subheading:
+
+Create smarter, design faster and grow your digital business with practical AI tools and ready-to-use digital products.
+
+Buttons:
+
+Explore AI Tools
+
+Shop Digital Products
+
+---
+
+7. AI TOOLS SECTION
+
+Create:
+
+AI Tools
+
+Display professional product cards.
+
+Each card supports:
+
+- Product image
+- AI TOOL badge
+- Product name
+- Description
+- Category
+- Starting price
+- Free/Paid badge
+- Rating area
+- View Details
+- Try Demo where available
+- Buy Access
+
+---
+
+8. FIRST AI PRODUCT
+
+Create the first main AI product:
+
+TuzakAI Jewelry Designer
+
+Description:
+
+Design jewelry with AI, create visual concepts, calculate materials and production costs, generate making instructions, and estimate selling prices and profit.
+
+Buttons:
+
+Try Demo
+
+View Details
+
+Buy Access
+
+This product must be designed as an online application.
+
+The customer should NOT download the source code.
+
+After purchase, the customer receives secure access through their account/license.
+
+---
+
+9. TUZAKAI JEWELRY DESIGNER PLANS
+
+Create:
+
+Free Demo
+
+Features:
+
+- Limited AI generations
+- Limited designs
+- Basic design functionality
+
+Creator
+
+Features:
+
+- AI jewelry design
+- Visual design preview
+- Materials/BOM
+- Production cost calculator
+- Wastage calculation
+- Labor calculation
+- Packaging cost
+- Selling price calculation
+- Profit estimation
+- Making instructions
+- Save designs
+- PDF export
+
+Pro
+
+Everything in Creator plus:
+
+- Higher AI usage
+- More saved designs
+- Advanced design variations
+- Advanced component database
+- Advanced business calculations
+- More AI features
+- Advanced customization
+
+Make plan limits configurable from the admin dashboard.
+
+---
+
+10. DIGITAL PRODUCTS
+
+Create a complete digital-product marketplace.
+
+Categories:
+
+- Jewelry Resources
+- Jewelry Design
+- Business Tools
+- Templates
+- AI Tools
+- AI Prompts
+- Guides & Ebooks
+- Social Media Templates
+- Canva Templates
+- Printables
+- Creative Resources
+- Other Digital Products
+
+Products must be dynamically managed from the database.
+
+---
+
+11. DIGITAL PRODUCT CARD
+
+Each product card should display:
+
+Product image
+
+Product type badge
+
+Product name
+
+Short description
+
+Rating
+
+Price
+
+Sale price where applicable
+
+Discount badge
+
+Buttons:
+
+View Details
+
+Add to Cart
+
+Buy Now
+
+For AI tools:
+
+AI TOOL
+
+For downloadable products:
+
+DIGITAL PRODUCT
+
+For free products:
+
+FREE
+
+For discounted products:
+
+SALE
+
+---
+
+12. PRODUCT DETAIL PAGE
+
+Create a dynamic product-detail page.
+
+Show:
+
+- Product gallery
+- Product title
+- Product type
+- Description
+- What is included
+- Features
+- File formats
+- Number of files
+- Software compatibility
+- Price
+- Sale price
+- Discount
+- Add to Cart
+- Buy Now
+- License terms
+- Usage rights
+- FAQ
+- Related products
+
+For AI products additionally show:
+
+- Features
+- Example results
+- Plans
+- Pricing
+- Usage limits
+- Access method
+- License requirements
+- Demo
+- FAQ
+
+---
+
+13. CART
+
+Create a real working shopping cart.
+
+Users can:
+
+- Add products
+- Remove products
+- Change quantity where allowed
+- Apply coupons
+- View subtotal
+- View discount
+- View total
+- Continue shopping
+- Proceed to checkout
+
+For license-based digital products, default quantity should be 1 unless the product explicitly allows multiple licenses.
+
+Persist cart for logged-in users.
+
+For guests, use secure session/local storage where appropriate.
+
+---
+
+14. CHECKOUT
+
+Create a professional checkout system.
+
+Collect:
+
+- Name
+- Email
+- Billing information where required
+
+Do NOT store raw:
+
+- card numbers
+- CVV
+- payment credentials
+
+Use a secure payment provider.
+
+Payment architecture must be provider-independent so another payment provider can be added later.
+
+---
+
+15. PAYMENT ARCHITECTURE
+
+Implement a payment service abstraction.
+
+Example environment variables:
+
+PAYMENT_SECRET_KEY
+
+PAYMENT_PUBLIC_KEY
+
+PAYMENT_WEBHOOK_SECRET
+
+Never expose secret values to the frontend.
+
+Never hard-code credentials.
+
+If payment credentials are not configured, display:
+
+Payment setup required
+
+Do NOT simulate successful payments.
+
+Payment success must only occur after verified payment-provider confirmation.
+
+---
+
+16. ORDER PROCESSING
+
+After verified payment:
+
+1. Create order
+2. Create order items
+3. Verify payment
+4. Mark payment status
+5. Create purchase entitlement
+6. Generate license if required
+7. Grant digital download access if applicable
+8. Grant AI-tool access if applicable
+9. Send purchase confirmation
+10. Show order-success page
+11. Add product to My Purchases
+
+Never grant paid access based only on frontend information.
+
+---
+
+17. DIGITAL PRODUCT DELIVERY
+
+For downloadable products:
+
+Display:
+
+Download Product
+
+Files must be protected.
+
+Do NOT expose permanent public storage paths.
+
+Use secure/expiring download URLs where supported.
+
+Track:
+
+- Customer
+- Product
+- Order
+- Purchase
+- Download count
+- Download timestamp
+- License status
+
+Allow configurable download limits.
+
+---
+
+18. AI TOOL LICENSE SYSTEM
+
+Create a secure license system.
+
+Example:
+
+SZTUZK-CREAT-XXXX-XXXX-XXXX
+
+License fields:
+
+- License ID
+- License key
+- Customer ID
+- Product ID
+- Plan
+- Status
+- Created date
+- Activation date
+- Expiry date
+- Usage limit
+- Usage used
+- Maximum devices
+- Last activity
+
+Statuses:
+
+- Active
+- Suspended
+- Revoked
+- Expired
+
+License verification must happen server-side.
+
+---
+
+19. CUSTOMER ACCOUNT
+
+Create secure authentication.
+
+Support:
+
+- Register
+- Login
+- Logout
+- Password reset
+- Email verification where configured
+- Profile
+
+Customer dashboard:
+
+My Account
+
+- Dashboard
+- My Purchases
+- Downloads
+- My AI Tools
+- Licenses
+- Orders
+- Profile
+- Support
+- Logout
+
+---
+
+20. MY AI TOOLS
+
+Create a dedicated customer page:
+
+My AI Tools
+
+Display purchased AI applications.
+
+For each:
+
+- Tool name
+- Plan
+- License status
+- Usage
+- Remaining usage
+- Expiry
+- Open Tool button
+
+Example:
+
+TuzakAI Jewelry Designer
+
+Creator Plan
+
+License: Active
+
+Usage: 23 / 100
+
+Open Tool
+
+---
+
+21. ADMIN DASHBOARD
+
+Create a secure admin-only dashboard.
+
+Use role-based authorization.
+
+Admin sections:
+
+- Overview
+- Products
+- AI Tools
+- Categories
+- Orders
+- Customers
+- Licenses
+- Downloads
+- Coupons
+- Marketplace
+- Payments
+- Settings
+- Support
+
+---
+
+22. ADMIN PRODUCT MANAGEMENT
+
+Admin can:
+
+- Create product
+- Edit product
+- Deactivate product
+- Delete product where appropriate
+- Upload product image
+- Upload digital files
+- Set price
+- Set sale price
+- Set category
+- Add description
+- Add features
+- Add FAQ
+- Set license requirement
+- Set download limits
+- Set product status
+
+Product fields:
+
+- Name
+- Slug
+- Product type
+- Category
+- Description
+- Price
+- Sale price
+- Image
+- Files
+- Features
+- Requirements
+- License terms
+- Refund terms
+- Active/inactive
+
+---
+
+23. ADMIN AI TOOL MANAGEMENT
+
+Admin can:
+
+- Create AI tool
+- Edit AI tool
+- Activate/deactivate AI tool
+- Set tool URL
+- Set Creator price
+- Set Pro price
+- Configure usage limits
+- Configure plans
+- Configure license requirements
+
+AI tool fields:
+
+- Name
+- Description
+- URL
+- Image
+- Features
+- Plans
+- Prices
+- Usage limits
+- Status
+
+---
+
+24. LICENSE ADMINISTRATION
+
+Admin can:
+
+- Generate license
+- View license
+- Activate
+- Suspend
+- Revoke
+- Renew
+- Extend expiry
+- Reset usage
+- Change plan
+
+Never expose license-generation secrets to customers.
+
+---
+
+25. COUPONS
+
+Admin can create:
+
+- Percentage discount
+- Fixed discount
+- Product-specific discount
+- Category-specific discount
+- Expiration date
+- Maximum uses
+- Minimum order value
+- Active/inactive
+
+Customers can enter coupon codes at checkout.
+
+Coupon validation must happen server-side.
+
+---
+
+26. EXTERNAL MARKETPLACE MANAGEMENT
+
+Create:
+
+Sell on Other Platforms
+
+Supported marketplace records:
+
+- Etsy
+- Gumroad
+- Other marketplaces
+
+IMPORTANT:
+
+Do NOT claim an API is connected unless it is actually configured and successfully authenticated.
+
+For each product allow admin to store:
+
+- Marketplace
+- Listing ID
+- Listing URL
+- Title
+- Description
+- Tags
+- Keywords
+- Category
+- Price
+- Product images
+- Digital files
+- License information
+- Customer instructions
+- Publishing status
+
+Buttons:
+
+Copy Listing
+
+Copy Description
+
+Copy Tags
+
+Download Listing Package
+
+If an official API is configured later, allow direct publishing/synchronization.
+
+---
+
+27. GUMROAD INTEGRATION
+
+Prepare secure Gumroad integration.
+
+Store:
+
+- Gumroad product ID
+- Gumroad URL
+- Product name
+- Price
+- Status
+
+If Gumroad API/webhook credentials are configured:
+
+- Verify purchases server-side
+- Process purchase events
+- Create/update customer entitlement
+- Generate/update license where applicable
+- Record purchase information
+
+Never expose Gumroad private credentials in frontend code.
+
+If integration is not configured:
+
+Display:
+
+Gumroad integration not configured
+
+Do not simulate a connection.
+
+---
+
+28. ETSY MANAGEMENT
+
+Create Etsy listing preparation tools.
+
+Store:
+
+- Etsy listing ID
+- Etsy URL
+- Title
+- Description
+- Tags
+- Price
+- Status
+
+Allow:
+
+Prepare Etsy Listing
+
+Copy Description
+
+Copy Tags
+
+Download Listing Package
+
+Do not claim that a listing has been published unless the actual integration confirms successful publication.
+
+The application must not depend on the deleted sztuzkjewelry.com website.
+
+---
+
+29. SEARCH
+
+Implement real search.
+
+Search:
+
+- Product names
+- Descriptions
+- Tags
+- Categories
+- AI tools
+
+Filters:
+
+- Category
+- Price
+- Product type
+- AI Tool
+- Digital Product
+- Free
+- Paid
+- New
+- Popular
+
+---
+
+30. DATABASE
+
+Use a proper production database.
+
+Minimum tables:
+
+users
+
+products
+
+product_categories
+
+product_files
+
+orders
+
+order_items
+
+payments
+
+purchases
+
+licenses
+
+license_usage
+
+downloads
+
+coupons
+
+coupon_redemptions
+
+ai_tools
+
+ai_plans
+
+marketplace_listings
+
+marketplace_accounts
+
+saved_products
+
+support_tickets
+
+site_settings
+
+---
+
+31. SITE SETTINGS
+
+Create admin-configurable site settings.
+
+Fields:
+
+- Site name
+- Site description
+- Logo
+- Favicon
+- Primary domain
+- Support email
+- Business email
+- Instagram URL
+- Facebook URL
+- Pinterest URL
+- YouTube URL
+- TikTok URL
+- Currency
+- Payment provider settings
+- Marketplace settings
+
+Default:
+
+Site name:
+
+TuzakAI
+
+Brand:
+
+TuzakAI by Sztuzk
+
+Domain:
+
+tuzkai.com
+
+Do not automatically invent social-media URLs or email addresses.
+
+Only display links that have been configured.
+
+---
+
+32. HEADER BRANDING
+
+Use:
+
+TuzakAI
+
+Small text:
+
+by Sztuzk
+
+Do NOT use:
+
+Sztuzk Jewelry Studio
+
+as the main header brand.
+
+The new platform is broader than jewelry.
+
+---
+
+33. FOOTER
+
+Footer branding:
+
+TuzakAI
+
+by Sztuzk
+
+Description:
+
+AI tools and digital products for creative entrepreneurs.
+
+Footer columns:
+
+Shop
+
+- AI Tools
+- Digital Products
+- Best Sellers
+- New Products
+
+Customer
+
+- My Account
+- My Purchases
+- Downloads
+- Support
+- Contact
+
+Information
+
+- About
+- FAQ
+- Privacy Policy
+- Terms & Conditions
+- Refund Policy
+- License Terms
+
+Follow
+
+Only show configured social-media links.
+
+Footer bottom:
+
+© 2026 TuzakAI by Sztuzk. All rights reserved.
+
+Do NOT include sztuzkjewelry.com.
+
+---
+
+34. SEO
+
+Default site title:
+
+TuzakAI — AI Tools & Digital Products
+
+Default description:
+
+TuzakAI by Sztuzk provides practical AI tools and digital products for creative entrepreneurs.
+
+Primary domain:
+
+tuzkai.com
+
+Use canonical URLs based on tuzkai.com.
+
+Do NOT generate any SEO references to:
+
+sztuzkjewelry.com
+
+---
+
+35. INITIAL PRODUCTS
+
+Prepare database records/templates for:
+
+1. TuzakAI Jewelry Designer — Creator
+2. TuzakAI Jewelry Designer — Pro
+3. Jewelry Design Planner
+4. Jewelry Cost Calculator
+5. Jewelry Pricing Calculator
+6. Resin Jewelry Design Pack
+7. Jewelry Business Guide
+8. Social Media Content Pack
+9. Canva Jewelry Templates
+10. Jewelry Product Photography Templates
+
+These are initial product records only.
+
+Admin must be able to:
+
+- Edit
+- Rename
+- Replace
+- Deactivate
+- Delete
+- Add new products
+
+Do not hard-code these products into the storefront.
+
+---
+
+36. FUTURE AI TOOL ARCHITECTURE
+
+The platform must support future AI applications.
+
+Examples:
+
+TuzakAI Jewelry Designer
+
+TuzakAI Product Description Generator
+
+TuzakAI Social Media Generator
+
+TuzakAI Jewelry Pricing Assistant
+
+TuzakAI Etsy Listing Assistant
+
+TuzakAI Product Photography Prompt Generator
+
+Each AI tool should support:
+
+- Name
+- Description
+- Image
+- Features
+- Plans
+- Price
+- Usage limits
+- License requirement
+- Access URL
+- Active/inactive status
+
+---
+
+37. SECURITY
+
+Never expose:
+
+- AI API keys
+- Payment secret keys
+- Database credentials
+- Admin credentials
+- License-generation secrets
+- Marketplace private credentials
+
+All sensitive operations must be server-side.
+
+Implement:
+
+- Authentication
+- Authorization
+- Role-based access
+- Input validation
+- Rate limiting
+- Secure sessions
+- CSRF protection where applicable
+- Server-side payment verification
+- Server-side license verification
+- Protected downloads
+- Webhook signature verification where supported
+- Secure password handling
+- Audit logging for important admin actions
+
+---
+
+38. PAYMENT SECURITY
+
+Never trust:
+
+- Frontend payment status
+- Frontend price
+- Frontend license status
+- Frontend entitlement
+
+The server must calculate/verify the final order and confirm payment before granting access.
+
+Never create fake payment success.
+
+---
+
+39. ERROR STATES
+
+Every external service must have a real error/setup state.
+
+Examples:
+
+Payment not configured:
+
+Payment setup required. Please configure the payment provider in Admin Settings.
+
+AI provider unavailable:
+
+AI service temporarily unavailable. Please try again later.
+
+Gumroad not configured:
+
+Gumroad integration not configured.
+
+Etsy not configured:
+
+Etsy integration not configured.
+
+Never show a fake success message.
+
+---
+
+40. RESPONSIVE DESIGN
+
+The website must work correctly on:
+
+- Android
+- iPhone
+- Tablet
+- Laptop
+- Desktop
+
+Prioritize mobile shopping.
+
+Test:
+
+- Header
+- Navigation
+- Product cards
+- Product pages
+- Cart
+- Checkout
+- Login
+- Customer dashboard
+- Downloads
+- AI tool access
+- Admin dashboard
+
+---
+
+41. DESIGN SYSTEM
+
+Use a modern premium creative-business style.
+
+Requirements:
+
+- Clean layout
+- Professional typography
+- Modern cards
+- Rounded corners
+- Clear CTA buttons
+- High-quality product imagery
+- Responsive grid
+- Good spacing
+- Accessible contrast
+- Fast loading
+- Mobile-first design
+
+Do not overuse gradients or make the application look like a generic AI SaaS dashboard.
+
+It should look like a professional digital-product marketplace.
+
+---
+
+42. ADMIN ANALYTICS
+
+Create an admin overview dashboard showing:
+
+- Total sales
+- Total orders
+- Total customers
+- Active licenses
+- Digital downloads
+- AI tool users
+- Revenue by product
+- Recent orders
+- Recent customers
+
+Only display real database data.
+
+If there is no data, show:
+
+No sales data yet.
+
+Do not create fake statistics.
+
+---
+
+43. CUSTOMER PURCHASE HISTORY
+
+Customers should see:
+
+- Order number
+- Date
+- Products
+- Amount
+- Payment status
+- Download/access status
+- License status
+
+Clicking an order should open its details.
+
+---
+
+44. SUPPORT
+
+Create a basic customer-support system.
+
+Customers can create:
+
+- Subject
+- Message
+- Related order
+- Related product
+
+Admin can:
+
+- View ticket
+- Reply
+- Change status
+
+Statuses:
+
+- Open
+- In Progress
+- Resolved
+- Closed
+
+---
+
+45. ABOUT PAGE
+
+Create an About page for:
+
+TuzakAI by Sztuzk
+
+Position it as a digital-product and AI-tool brand helping creative entrepreneurs work smarter.
+
+Do not refer customers to the deleted website.
+
+---
+
+46. CONTACT PAGE
+
+Create a professional contact form.
+
+Fields:
+
+- Name
+- Email
+- Subject
+- Message
+
+Store submissions securely in the database.
+
+Admin can manage contact messages.
+
+Use the support email configured in Admin Settings.
+
+Do not invent an email address.
+
+---
+
+47. LEGAL PAGES
+
+Create editable pages for:
+
+- Privacy Policy
+- Terms & Conditions
+- Refund Policy
+- Digital Product License Terms
+
+These pages should be editable from the admin dashboard.
+
+Do not claim legal compliance automatically.
+
+---
+
+48. NO DUMMY FUNCTIONALITY
+
+Do NOT create fake:
+
+- Payment success
+- Checkout
+- Orders
+- Downloads
+- License verification
+- Marketplace publishing
+- AI generation
+- Customer accounts
+- Admin controls
+- Sales statistics
+
+If a required external credential is missing, build the integration and clearly show that it requires configuration.
+
+---
+
+49. IMPORTANT SOURCE-CODE ARCHITECTURE
+
+Keep the storefront and AI applications logically separated.
+
+Example:
+
+Storefront
+
+tuzkai.com
+
+↓
+
+Product purchase
+
+↓
+
+Customer account
+
+↓
+
+License/entitlement
+
+↓
+
+AI application
+
+For example:
+
+tuzkai.com
+
+→ TuzakAI Jewelry Designer
+
+→ Creator purchase
+
+→ Customer login
+
+→ License verification
+
+→ Open Jewelry Designer
+
+The customer should only receive access to the application, not the underlying source code.
+
+---
+
+50. FINAL ACCEPTANCE TEST
+
+Before declaring the application complete, test:
+
+Store
+
+1. Admin creates a product.
+2. Product appears on storefront.
+3. Customer opens product page.
+4. Customer adds product to cart.
+5. Customer applies a valid coupon.
+6. Customer proceeds to checkout.
+7. Payment provider processes payment.
+8. Server verifies payment.
+9. Order is created.
+10. Purchase entitlement is created.
+
+Digital Product
+
+11. Customer sees purchased product.
+12. Customer downloads the protected file.
+13. Download is recorded.
+
+AI Product
+
+14. Admin creates TuzakAI Jewelry Designer Creator plan.
+15. Customer purchases Creator.
+16. License is generated.
+17. License appears in My Account.
+18. Customer opens AI tool.
+19. AI tool verifies license server-side.
+20. Customer can use permitted features.
+21. Usage is recorded.
+22. Customer reaches usage limit.
+23. Further usage is correctly restricted.
+
+Administration
+
+24. Admin sees order.
+25. Admin sees customer.
+26. Admin sees license.
+27. Admin can reset usage.
+28. Admin can suspend license.
+29. Suspended license loses protected access.
+30. Admin can reactivate license.
+
+Marketplace
+
+31. Admin can create marketplace listing information.
+32. Admin can copy listing content.
+33. Admin can store Etsy/Gumroad listing IDs.
+34. No marketplace is falsely shown as connected.
+
+Branding
+
+35. Search the entire project for:
+
+sztuzkjewelry.com
+
+There must be ZERO active references to the deleted website.
+
+36. Confirm the production domain is:
+
+tuzkai.com
+
+37. Confirm the main brand is:
+
+TuzakAI
+
+38. Confirm brand relationship is:
+
+TuzakAI by Sztuzk
+
+---
+
+51. MOST IMPORTANT REQUIREMENT
+
+This is intended to become a real commercial business.
+
+Build a scalable production application, not a visual mockup.
+
+Use:
+
+- Real database records
+- Real authentication
+- Real authorization
+- Real customer accounts
+- Real product entitlements
+- Real payment verification
+- Protected downloads
+- Real license verification
+- Real admin controls
+- Real usage tracking
+
+Do not invent data.
+
+Do not pretend integrations are connected.
+
+Do not expose private credentials.
+
+Keep the architecture modular so I can continuously add new AI tools and digital products.
+
+The application must be completely independent from the deleted:
+
+sztuzkjewelry.com
+
+The new business identity is:
+
+TUZAKAI
+
+by Sztuzk
+
+Primary domain:
+
+tuzkai.com

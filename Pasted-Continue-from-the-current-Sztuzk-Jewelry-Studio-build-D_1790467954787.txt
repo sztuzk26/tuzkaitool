@@ -1,0 +1,223 @@
+Continue from the current Sztuzk Jewelry Studio build.
+
+Do NOT redesign or replace the current app. Keep the existing luxury Sztuzk design and all working features.
+
+I want you to make the following final improvements before publishing:
+
+1. FIX THE BUSINESS STARTER LOGIC
+
+The selections in the Business Starter should actually affect the generated business plan.
+
+For example:
+
+If the user selects:
+- Jewelry type: Earrings
+- Style/niche: Luxury
+- Budget: Under PKR 10,000
+- Experience: Beginner
+- Customer: Women
+- Selling platform: Etsy
+
+Then the generated plan must specifically recommend beginner-friendly luxury earrings that fit the selected budget and customer.
+
+Do not generate generic results that ignore the user's selections.
+
+2. CONNECT THE BUSINESS PLAN TO PRODUCT IDEAS
+
+After generating the business plan, add:
+
+“GENERATE MY PRODUCT IDEAS”
+
+The product ideas must be based on the user's Business Starter selections.
+
+Each product idea should include:
+- Product name
+- Jewelry type
+- Style
+- Materials
+- Beginner/intermediate/advanced difficulty
+- Estimated material cost
+- Suggested selling-price range
+- Packaging idea
+
+Add a button:
+
+“DESIGN THIS”
+
+This must transfer the selected product into the Jewelry Design Generator.
+
+3. CONNECT THE FULL WORKFLOW
+
+Make this exact workflow work:
+
+Business Starter
+↓
+Product Ideas
+↓
+Design Generator
+↓
+Pricing Calculator
+↓
+Etsy Listing Generator
+
+Preserve the user's data at every step.
+
+4. JEWELRY IDEA GENERATOR
+
+Make sure the filters actually affect the generated ideas.
+
+For example:
+If the user chooses Resin + Earrings + Beginner + Pink,
+do not generate gemstone necklaces.
+
+5. DESIGN GENERATOR
+
+When a user arrives from Product Ideas, automatically pre-fill:
+- Jewelry type
+- Style
+- Materials
+- Color
+- Occasion
+- Skill level
+
+Allow the user to edit them before generating.
+
+6. PRICING CALCULATOR
+
+When a user arrives from the Design Generator, pre-fill the material fields where possible.
+
+Keep all pricing calculations functional.
+
+Clearly display:
+
+Material Cost
+Labor Cost
+Packaging
+Other Expenses
+Total Cost
+Suggested Selling Price
+Estimated Profit
+Profit Margin
+
+Keep the disclaimer:
+
+“Prices are estimates and should be adjusted according to your actual material costs, marketplace fees and local market conditions.”
+
+7. ETSY LISTING GENERATOR
+
+When a user arrives from the Pricing Calculator, automatically transfer:
+- Product name
+- Jewelry type
+- Materials
+- Color
+- Style
+- Price
+- Size if available
+
+Then generate:
+- Etsy title
+- Description
+- Materials
+- 13 suggested tags
+- Care instructions
+- Personalization instructions
+- Photo checklist
+
+Clearly label this as:
+
+“Etsy Listing Draft”
+
+Do not promise Etsy rankings or sales.
+
+8. SAVE PROJECT
+
+Keep the current browser-based saving system.
+
+Add a visible:
+
+“SAVED PROJECTS”
+
+section where users can see:
+- Saved designs
+- Saved business plans
+- Saved pricing calculations
+- Saved Etsy listings
+
+9. DOWNLOAD
+
+Make the Download buttons work.
+
+Where practical, download results as a clean printable document or text file.
+
+10. SHOP CONNECTION
+
+Keep:
+
+“SHOP SZTUZK JEWELRY”
+
+pointing to:
+
+This destination is retired; no replacement URL has been supplied.
+
+Do not change my existing jewelry store.
+
+11. CUSTOM JEWELRY
+
+Keep the Custom Jewelry button pointing to my main Sztuzk website for now.
+
+Do not invent a WhatsApp/contact URL.
+
+12. DIGITAL PRODUCTS
+
+Keep these resources:
+
+Jewelry Business Starter Kit
+Jewelry Pricing Workbook
+Jewelry Design Workbook
+Jewelry Social Media Kit
+Jewelry Packaging Templates
+Jewelry Size Guide
+
+Keep them as “Coming Soon” until I provide real product links.
+
+13. MOBILE
+
+Test the complete workflow on a narrow mobile screen.
+
+Make sure:
+- forms fit the screen
+- buttons are easy to tap
+- cards do not overflow
+- results are readable
+- no horizontal scrolling occurs
+
+14. FINAL TEST
+
+Test this exact example:
+
+Business Starter:
+Earrings
+Luxury
+Under PKR 10,000
+Beginner
+Women
+Etsy
+
+Then:
+
+Generate Product Ideas
+→ choose one
+→ Design This
+→ generate design
+→ Calculate Price
+→ Create Etsy Listing
+
+Make sure the selected information follows through the entire workflow.
+
+Do not publish yet.
+
+When finished, tell me:
+1. What was fixed
+2. What is fully working
+3. What still needs to be connected
+4. What I need to do before publishing
